@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Movetherobot.live</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="logo">
+      <img src="img/logomano.ico" alt="Movetherobot">
+      <a href="#home">movetherobot.live</a>
+    </div>
+
+    <div class="menu-right">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#¿Cómo funciona?" class="active">Sobre</a></li>
+        <li class="submenu">
+          <a href="controles.html">Controles</a>
+          <ul class="dropdown">
+            <li><a href="gestos-faciales.html">Control por gestos faciales (IA)</a></li>
+            <li><a href="movimiento-ia.html">Control por movimiento (IA)</a></li>
+            <li><a href="botones.html">Control por botones</a></li>
+            <li><a href="audio.html">Control por audio</a></li>
+            <li><a href="chat.html">Control por chat</a></li>
+          </ul>
+        </li>
+        <li><a href="turnos.html">Turnos</a></li>
+        <li><a href="donar.html">Donar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+
+        <li class="lang-li">
+            <select id="langSelect">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            </select>
+        </li>
+        </ul>
+    </nav>
+
+  <div id="preloader">
+    <div class="spinner"></div> 
+  </div>
+
+  <header id="home" class="oculto">
+    <div class="header-container">
+      <div class="robot-animation">
+        <lottie-player
+          src="https://lottie.host/10a0f65c-8874-4409-bdcb-80b2c52319d2/WF7Ilft3bj.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="header-text">
+        <h1>Controla a ROBi online! 📡💻🎮</h1>
+        <h2>¡Controla un brazo robótico REAL desde tu dispositivo preferido!</h2>
+      </div>
+    </div>
+    <hr>
+  </header>
+  
+  <section id="¿Cómo funciona?" class="oculto">
+    <div class="row">
+      <div class="column">
+        <ul>
+            <br><br>
+            <br><br>
+
+          </ul>
+
+        <div class="responsive-video">
+          <iframe 
+
+          src="https://www.youtube.com/embed/QWHFoL4Mtao" 
+            title="YouTube video player"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="column">
+        <h2>¿Cómo funciona?</h2>
+        <ul>
+          <li>🔹 Conecta tu dispositivo al brazo robótico</li>
+          <li>🔹 Dale órdenes y observa cómo se mueve</li>
+          <li>🔹 Coloca tu mano frente a la cámara y deja que te copie usando IA</li>
+          <li>🔹 Mira el video para conocer más funcionalidades</li>
+        </ul>
+        <lottie-player
+        src="https://assets7.lottiefiles.com/packages/lf20_Lxwof5OPqR.json"
+        class="lottie-center"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay>
+      </lottie-player>
+
+      </div>
+
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <section class="oculto">
+    <div class="row">
+      <div class="column">
+        <lottie-player
+          src="https://lottie.host/5e5b62d2-8d68-4101-b0b9-4535fe9c7d31/3ItOLXKRSs.json"
+          class="lottie-center"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="column texto">
+        <h2>¿Cómo puedo participar?</h2>
+        <ul>
+          <li>🔹 En el menú (o arriba) puedes acceder a las opciones de control</li>
+          <li>🔹 Sigue las instrucciones y diviértete</li>
+          <li>🔹 Para "Control por cámara" debes sacar turno y obtener un código de acceso</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <section class="oculto">
+    <div class="row">
+      <div class="column texto">
+        <h2>¡Quiero saber más!</h2>
+        <ul>
+          <li>🔹 Tus órdenes viajan a un servidor en la nube de AWS</li>
+          <li>🔹 La info se procesa y se guarda en una base de datos</li>
+          <li>🔹 El robot consulta la base de datos y se mueve según los valores</li>
+          <li>🔹 Las imágenes procesadas con IA no quedan almacenadas y todo va encriptado</li>
+        </ul>
+      </div>
+      <div class="column">
+        <lottie-player
+          src="https://lottie.host/854e125b-f644-4956-8a6b-cd2f5527e4eb/5l7mthuSpa.json"
+          class="lottie-center"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <section class="oculto">
+    <div class="row">
+      <div class="column">
+        <lottie-player
+          src="https://lottie.host/f98b6e15-c4cd-4203-8a3a-c8034ee681b0/qcp8NQTkaL.json"
+          class="lottie-center"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="column texto">
+        <h2>¿Por qué?</h2>
+        <p>
+            Hola! Mi nombre es Facundo Nieto. Mi pasión por la robótica aplicada al humano y la inteligencia artificial me llevó a desarrollar movetherobot.live.
+        </p>
+        <br><br>
+        <p>
+            Durante mi tesis de grado, me encontraba investigando sobre distintos modelos de machine learning para la predicción de movimientos del miembro superior, utilizando señales mioeléctricas. Llegado el momento de realizar pruebas, necesitaba un brazo robótico para medir la performance de los modelos obtenidos en un entorno real. Lamentablemente, no había disponible en la universidad un robot con estas características y tampoco había patrocinadores disponibles debido a que esta etapa sucedió durante la pandemia. Por lo tanto, tuve que fabricarlo por mis propios medios. Si bien, esto me llevó a poder terminar mi tesis y graduarme, sentí en primera persona lo alejados que podemos estar de esta tecnología, sobre todo en Latinoamérica.
+            <br><br>
+            Con movetherobot.live, mi objetivo es acercar esta tecnología a la gente y mostrar que puede no ser algo tan lejano. Mientras tengas una buena conexión a internet, puedes usar el robot!
+            <br><br>
+            Espero de todo corazón que esta tecnología los apasione tanto como a mí!
+        </p>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <section class="oculto">
+    <h2>Tecnologías utilizadas 💻⚙</h2>
+    <div class="logos-container">
+      <div><img src="tecnologias/Python.png" alt="Python"></div>
+      <div><img src="tecnologias/C++.png" alt="C++"></div>
+      <div><img src="tecnologias/TensorFlowLogo.png" alt="TensorFlow"></div>
+      <div><img src="tecnologias/AWS-EC2.png" alt="AWS EC2"></div>
+      <div><img src="tecnologias/Streamlit.png" alt="Streamlit"></div>
+      <div><img src="tecnologias/OpenCV.png" alt="OpenCV"></div>
+      <div><img src="tecnologias/AmazonRDS.png" alt="AWS RDS"></div>
+      <div><img src="tecnologias/AppsScript.png" alt="AppsScript"></div>
+      <div><img src="tecnologias/arduino.png" alt="arduino"></div>
+      <div><img src="tecnologias/GitHub.png" alt="GitHub"></div>
+      <div><img src="tecnologias/mysql.png" alt="mysql"></div>
+      <div><img src="tecnologias/Pandas_logo.svg.png" alt="Pandas_logo.svg"></div>
+    </div>
+    <hr>
+  </section>
+
+  <footer>
+    <p>© 2024 Movetherobot.live</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

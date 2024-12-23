@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Movetherobot.live - Turnos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo">
+      <img src="img/logomano.ico" alt="Movetherobot">
+      <a href="#home">movetherobot.live</a>
+    </div>
+
+    <div class="menu-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#¿Cómo funciona?" class="active">Sobre</a></li>
+        <li class="submenu">
+          <a href="controles.html">Controles</a>
+          <ul class="dropdown">
+            <li><a href="gestos-faciales.html">Control por gestos faciales (IA)</a></li>
+            <li><a href="movimiento-ia.html">Control por movimiento (IA)</a></li>
+            <li><a href="botones.html">Control por botones</a></li>
+            <li><a href="audio.html">Control por audio</a></li>
+            <li><a href="chat.html">Control por chat</a></li>
+          </ul>
+        </li>
+        <li><a href="turnos.html">Turnos</a></li>
+        <li><a href="donar.html">Donar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+
+        <li class="lang-li">
+            <select id="langSelect">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            </select>
+        </li>
+        </ul>
+    </nav>
+
+
+
+  <header>
+    <div class="header-container">
+      <div class="robot-animation">
+        <lottie-player
+          src="https://lottie.host/f798ec31-59cb-443c-b26f-0754174d40e8/mBNTJVVhcE.json"
+          class="lottie-center"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="header-text">
+        <h1>Turnos! 📆🤖</h1>
+        <h2>¡Pide tu código para poder utilizar la inteligencia artificial del robot!</h2>
+      </div>
+    </div>
+    <hr>
+  </header>
+
+  <section>
+    <p>
+        ¡Revisa los horarios y completa el formulario!
+    </p>
+    <hr>
+
+    <div class="row">
+      <div class="column">
+        <p class="caption">
+          🔸 Llena el formulario. Recuerda que cada turno dura 15 minutos! 📝⌚
+        </p>
+        <div class="responsive-iframe">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeLwTlr0ewgnnJosSRZ5FffayXgbrv0PZ1fhy9cvxcAj-wcog/viewform?embedded=true"
+            width="100%"
+            height="600"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+          Cargando…
+          </iframe>
+        </div>
+      </div>
+      <div class="column">
+        <p class="caption">
+          🔸 Revisa los horarios disponibles antes de enviar el formulario 📆👀
+        </p>
+        <div class="responsive-iframe">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=movetherobotlive%40gmail.com&ctz=America%2FArgentina%2FCordoba"
+            style="border: 0"
+            width="100%"
+            height="600"
+            frameborder="0"
+            scrolling="no">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Movetherobot.live</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

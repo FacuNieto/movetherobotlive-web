@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Movetherobot.live</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+  <nav class="top-nav">
+    <div class="logo">
+      <img src="img/logomano.ico" alt="Movetherobot">
+      <a href="#home">movetherobot.live</a>
+    </div>
+
+    <div class="menu-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#¿Cómo funciona?" class="active">Sobre</a></li>
+        <li class="submenu">
+          <a href="controles.html">Controles</a>
+          <ul class="dropdown">
+            <li><a href="gestos-faciales.html">Control por gestos faciales (IA)</a></li>
+            <li><a href="movimiento-ia.html">Control por movimiento (IA)</a></li>
+            <li><a href="botones.html">Control por botones</a></li>
+            <li><a href="audio.html">Control por audio</a></li>
+            <li><a href="chat.html">Control por chat</a></li>
+          </ul>
+        </li>
+        <li><a href="turnos.html">Turnos</a></li>
+        <li><a href="donar.html">Donar</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+
+        <li class="lang-li">
+            <select id="langSelect">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            </select>
+        </li>
+        </ul>
+    </nav>
+
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- ====== ENCABEZADO ====== -->
+  <header>
+    <div class="header-container">
+      <div class="robot-animation">
+        <lottie-player
+          src="https://lottie.host/86fd061d-3fdd-43e1-8703-81c4f5480a7c/EoUrNbXUlu.json"
+          class="lottie-center"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+      <div class="header-text">
+        <h1>¡Hablemos!</h1>
+        <h2>Llena el formulario para dudas, sugerencias o alianzas</h2>
+      </div>
+    </div>
+    <hr>
+  </header>
+
+  <section>
+    <p>
+      Si tienes cualquier pregunta, sugerencia, o quieres colaborar con movetherobot.live, 
+      por favor llena el formulario o usa los datos de contacto de la derecha.
+    </p>
+    <hr>
+  </section>
+
+  <section class="row" style="margin-bottom: 2rem;">
+    <div class="column" style="flex: 0.5;">
+      <h2>Formulario de contacto</h2>
+      <form class="contact-form" action="https://formspree.io/f/xlddejqz" method="POST">
+        
+        <!-- Nombre -->
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" placeholder="Tu email" required>
+        
+        <!-- Asunto -->
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje" required>
+        
+        <!-- Mensaje -->
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <!-- Botón Enviar -->
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div class="column" style="flex: 0.5;">
+      <h2>Datos de contacto</h2>
+      <ul style="list-style: none; padding-left: 0;">
+        <li><strong>Email:</strong> movetherobotlive@gmail.com</li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/movetherobot.live/" target="_blank">@movetherobot.live</a></li>
+      </ul>
+
+      <h3>Ubicación (ej. Google Maps)</h3>
+      <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20394226.929533448!2d-70.43317687485106!3d-36.7071523454922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1734921050644!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2024 Movetherobot.live</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
