@@ -61,17 +61,42 @@ hr {
 }
 
 .row {
-  justify-content: center;  
+  display: flex;            /* Activa Flexbox */
+  justify-content: center;  /* Alinea horizontalmente al centro */
+  align-items: flex-start;  /* O 'center' si quieres centrar también verticalmente */
+  gap: 2rem;                /* Espacio entre columnas (opcional) */
+  
+  /* En caso de querer restringir el ancho total */
+  max-width: 1200px;        /* Por ejemplo */
+  margin: 0 auto;           /* Centra el contenedor en la página */
+}
 
+.row_col {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  gap: 1rem;
   margin: 1rem 0;
 }
+
 .column {
   flex: 1;
   padding: 1rem;
   min-width: 250px;
 }
+
+.column_boton {
+  flex: 1;
+  padding: 1rem;
+  min-width: 100px;
+}
+
+.caption {
+  
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+
 .texto {
   display: flex;
   flex-direction: column;
@@ -339,4 +364,129 @@ ul {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* Columna especial para los ángulos */
+.angle-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.angle-col h4 {
+  color: #ff6b00;
+  margin-bottom: 0.5rem;
+}
+
+.angle-col button {
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.angle-col button:hover {
+  background-color: #666;
+}
+
+
+/* -- Estructura: reset, navbar, etc. (similar a lo anterior) -- */
+
+/* Sección para el input de código */
+.code-section {
+  text-align: center;
+  padding: 1rem;
+}
+
+.code-section h1 {
+  margin-bottom: 1rem;
+}
+
+.code-input {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.code-input input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.code-input button {
+  padding: 0.5rem 1rem;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.code-input button:hover {
+  background: #666;
+}
+
+/* Contenedor principal para cámara input/ output */
+.camera-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem auto;
+  justify-content: center; /* centrado horizontal */
+  align-items: flex-start;
+  max-width: 1200px; /* para que no se extienda demasiado */
+}
+
+/* Cada columna (video y output) */
+.camera-col {
+  
+  flex: 1;
+  min-width: 300px;  /* Se apilen en pantallas pequeñas */
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Ajustes para el video e imagen */
+#video, #output {
+  display: block;
+  margin: 0.5rem auto;
+  width: 540px;
+  height: 330px;
+  background: #000;
+  object-fit: contain; /* Ajusta la imagen sin distorsionar */
+  border: 2px solid #444;
+  border-radius: 4px;
+}
+
+/* Fila de botones (Start/Stop) */
+.button-row {
+  text-align: center;
+}
+
+.button-row button {
+  margin: 0 1rem;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background: #444;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button-row button:hover {
+  background: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #video, #output {
+    width: 100%;
+    height: auto;
+  }
 }
